@@ -238,11 +238,6 @@ class rhs_weap_m4_carryhandle_m203S_sf : rhs_weap_m4_carryhandle_m203S{
             slot = "CowsSlot";
             item = "optic_holosight_blk_f";
         };
-        class LinkedItemsMuzzle
-        {
-            slot = "MuzzleSlot";
-			item = "ace_muzzle_mzls_l";
-		};
 
 		class LinkedItemsAcc {
 			slot = "PointerSlot";
@@ -266,11 +261,6 @@ class rhs_weap_m4_carryhandle_mstock_sf : rhs_weap_m4_carryhandle_mstock_grip2{
             item = "rhsusf_acc_grip2";
         };
 
-        class LinkedItemsMuzzle
-        {
-            slot = "MuzzleSlot";
-			item = "ace_muzzle_mzls_l";
-		};
 
 		class LinkedItemsAcc {
 			slot = "PointerSlot";
@@ -294,11 +284,6 @@ class rhs_weap_m249_pip_S_grip : rhs_weap_m249_pip_S_vfg3{
             item = "rhsusf_acc_kac_grip_saw_bipod";
         };
 
-        class LinkedItemsMuzzle
-        {
-            slot = "MuzzleSlot";
-			item = "ace_muzzle_mzls_l";
-		};
     };
 };
 
@@ -324,11 +309,6 @@ class rhs_weap_m21s_pkas_sf : rhs_weap_m21s{
             item = "rhs_acc_pkas";
         };
 
-        class LinkedItemsMuzzle
-        {
-            slot = "MuzzleSlot";
-			item = "ace_muzzle_mzls_l";
-		};
 
 		class LinkedItemsAcc {
 			slot = "PointerSlot";

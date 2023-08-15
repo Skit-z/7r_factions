@@ -15,18 +15,32 @@
 #define BACK_ITEM_XX(a,b) class a {name = a; count = b;}
 
 class CfgFactionClasses {
-    class 7R_adf {
-        displayName = "[7R] Defense Forces of Artemisa";
+    class 7r_adf {
+        displayName = "[7R] Artemisa Defense Forces";
         side = 1;
-        flag = "\7R Factions\7R_factions_adf\data\artemisa_flag.paa";
-        icon = "\7R Factions\7R_factions_adf\data\artemisa_flag.paa";
+        flag = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
+        icon = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
         priority = 0;
     };
-    class 7R_adf_o {
-        displayName = "[7R] Defense Forces of Artemisa";
+    class 7r_adf_pl {
+        displayName = "[7R] Artemisa Defense Forces (Genericized)";
+        side = 1;
+        flag = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
+        icon = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
+        priority = 0;
+    };
+    class 7r_adf_o {
+        displayName = "[7R] Artemisa Defense Forces";
         side = 0;
-        flag = "\7R Factions\7R_factions_adf\data\artemisa_flag.paa";
-        icon = "\7R Factions\7R_factions_adf\data\artemisa_flag.paa";
+        flag = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
+        icon = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
+        priority = 0;
+    };
+    class 7r_adf_o_pl {
+        displayName = "[7R] Artemisa Defense Forces (Genericized)";
+        side = 0;
+        flag = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
+        icon = "\7r_factions\7r_factions_adf\data\artemisa_flag.paa";
         priority = 0;
     };
 };
@@ -36,16 +50,6 @@ class CfgEditorSubcategories
 	class EdSubcat_Support_Personnel // Category class, you point to it in editorSubcategory property
 	{
 		displayName = "Men (Support)"; // Name visible in the list
-	};
-
-    class EdSubcat_Support_PL_Personnel // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "Men (Support/Patchless)"; // Name visible in the list
-	};
-
-    class EdSubcat_Patchless_Personnel // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "Men (Patchless)"; // Name visible in the list
 	};
 
     class EdSubcat_Recon_Personnel // Category class, you point to it in editorSubcategory property
@@ -63,8 +67,6 @@ class CfgWeapons{
     #include "gear\uniforms.hpp"
 
     #include "gear\headgear.hpp"
-
-    #include "gear\vests.hpp"
         
 };
 
@@ -84,7 +86,7 @@ class CfgVehicles {
 
     #include "soldiers\soldiers_sf_o.hpp"
 
-    //#include "vehicles.hpp"
+    #include "vehicles_config.hpp"
 
     #include "objects.hpp"
 
@@ -97,30 +99,38 @@ class CfgGroups {
     {
         name = "BLUFOR"; // Name of Faction Side 
         side = 1; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think 
-        class 7R_adf //Faction Class name 
+        class 7r_adf //Faction Class name 
         {
-            name = "[7R] Defense Forces of Artemisa"; //Faction Name 
+            name = "[7R] Artemisa Defense Forces"; //Faction Name 
 
             #include "groups\groups.hpp"
 
-            #include "groups\groups_pl.hpp"
-
             #include "groups\groups_sf.hpp"
+        };
+        class 7r_adf_pl //Faction Class name 
+        {
+            name = "[7R] Artemisa Defense Forces (Genericized)"; //Faction Name 
+
+            #include "groups\groups_pl.hpp"
         };
     };
     class EAST
     {
         name = "OPFOR"; // Name of Faction Side 
         side = 0; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think 
-        class 7R_adf_o //Faction Class name 
+        class 7r_adf_o //Faction Class name 
         {
-            name = "[7R] Defense Forces of Artemisa"; //Faction Name 
+            name = "[7R] Artemisa Defense Forces"; //Faction Name 
 
             #include "groups\groups_o.hpp"
 
-            #include "groups\groups_pl_o.hpp"
-
             #include "groups\groups_sf_o.hpp"
+        };
+        class 7r_adf_o_pl //Faction Class name 
+        {
+            name = "[7R] Artemisa Defense Forces (Genericized)"; //Faction Name 
+
+            #include "groups\groups_pl_o.hpp"
         };
     };
 };

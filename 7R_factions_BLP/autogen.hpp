@@ -15,11 +15,11 @@
 #define BACK_ITEM_XX(a,b) class a {name = a; count = b;}
 
 class CfgFactionClasses {
-    class 7R_blp {
-        displayName = "[7R] Brigadas de Liberación Populares";
+    class 7r_blp {
+        displayName = "[7R] Brigadas de Liberación Popular";
         side = 2;
-        flag = "\7R Factions\7R_factions_blp\data\blp_flag.paa";
-        icon = "\7R Factions\7R_factions_blp\data\blp_flag.paa";
+        flag = "\7r_factions\7R_factions_blp\data\blp_flag.paa";
+        icon = "\7r_factions\7R_factions_blp\data\blp_flag.paa";
         priority = 0;
     };
 };
@@ -36,28 +36,40 @@ class CBA_Extended_EventHandlers_base;
 
 class CfgWeapons{
 
-    //#include "modified_weapons.hpp"
+    #include "gear\headgear.hpp"
 
-    #include "uniforms.hpp"
+    #include "gear\uniforms.hpp"
         
 };
 
 class CfgVehicles {
 
-    #include "soldiers_base.hpp"
+    #include "soldiers\soldiers_base.hpp"
 
-    //#include "soldiers1.hpp"
+    #include "soldiers\soldiers.hpp"
 
-    //#include "vehicles.hpp"
+    #include "vehicles\armor.hpp"
+
+    #include "vehicles\cars.hpp"
+
+    #include "vehicles\trucks.hpp"
+
+    #include "vehicles\turrets.hpp"
 
     #include "objects.hpp"
-
-    //#include "backpacks.hpp"
 
 };
 
 class CfgGroups {
+    class Indep
+    {
+        name = "Independent"; // Name of Faction Side 
+        side = 2; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think 
+        class 7r_blp //Faction Class name 
+        {
+            name = "[7R] Brigadas de Liberación Popular"; //Faction Name 
 
-    //#include "groups.hpp"
-
+            #include "groups\groups.hpp"
+        };
+    };
 };

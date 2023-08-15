@@ -1,8 +1,6 @@
 class VSM_OGA_OD_Backpack_Kitbag;
 
-class UK3CB_ION_B_B_RIF_MED_OLI;
-
-class UK3CB_B_Largepack;
+class B_Messenger_Black_F;
 
 class VSM_OGA_OD_Backpack_Kitbag_AR_O : VSM_OGA_OD_Backpack_Kitbag
 {
@@ -11,7 +9,7 @@ class VSM_OGA_OD_Backpack_Kitbag_AR_O : VSM_OGA_OD_Backpack_Kitbag
 	scopeCurator = 1;
 	class TransportMagazines
 	{
-		BACK_MAG_XX(UK3CB_RPK74_60rnd_545x39,5);
+		BACK_MAG_XX(rhs_60Rnd_545X39_7N10_AK,5);
 	};
 };
 
@@ -70,7 +68,7 @@ class VSM_OGA_OD_Backpack_Kitbag_AT : VSM_OGA_OD_Backpack_Kitbag
 	};
 };
 
-class UK3CB_ION_B_B_RIF_MED_OLI_med : UK3CB_ION_B_B_RIF_MED_OLI
+class VSM_OGA_OD_Backpack_Kitbag_med : VSM_OGA_OD_Backpack_Kitbag
 {
 	scope = 1;		// There is no need for this bag to appear in the editor, Virtual Arsenal, or Zeus.
 	scopeArsenal = 1;
@@ -81,7 +79,7 @@ class UK3CB_ION_B_B_RIF_MED_OLI_med : UK3CB_ION_B_B_RIF_MED_OLI
 	};
 };
 
-class UK3CB_B_Largepack_ENG : UK3CB_B_Largepack
+class B_Messenger_Black_F_ENG : B_Messenger_Black_F
 {
 	scope = 1;		// There is no need for this bag to appear in the editor, Virtual Arsenal, or Zeus.
 	scopeArsenal = 1;
@@ -94,7 +92,7 @@ class UK3CB_B_Largepack_ENG : UK3CB_B_Largepack
 	};
 };
 
-class UK3CB_B_Largepack_DEMO : UK3CB_B_Largepack
+class B_Messenger_Black_F_DEMO : B_Messenger_Black_F
 {
 	scope = 1;		// There is no need for this bag to appear in the editor, Virtual Arsenal, or Zeus.
 	scopeArsenal = 1;

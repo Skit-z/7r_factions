@@ -15,11 +15,11 @@
 #define BACK_ITEM_XX(a,b) class a {name = a; count = b;}
 
 class CfgFactionClasses {
-    class 7R_lpdf {
+    class 7r_lpdf {
         displayName = "[7R] Livonian People's Defense Forces";
         side = 0;
-        flag = "\7R Factions\7R_factions_lpdf\data\lpr_flag.paa";
-        icon = "\7R Factions\7R_factions_lpdf\data\lpr_flag.paa";
+        flag = "\7r_factions\7R_factions_lpdf\data\lpr_flag.paa";
+        icon = "\7r_factions\7R_factions_lpdf\data\lpr_flag.paa";
         priority = 0;
     };
 };
@@ -44,11 +44,11 @@ class CfgWeapons{
 
 class CfgVehicles {
 
-    #include "soldiers_base.hpp"
+    #include "soldiers\soldiers_base.hpp"
 
-    #include "soldiers1.hpp"
+    #include "soldiers\soldiers.hpp"
 
-    //#include "vehicles.hpp"
+    #include "vehicleConfig.hpp"
 
     #include "objects.hpp"
 
@@ -57,7 +57,15 @@ class CfgVehicles {
 };
 
 class CfgGroups {
-
-    #include "groups.hpp"
-
+    class east
+    {
+        name = "OPFOR"; // Name of Faction Side 
+        side = 0; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think 
+        class 7r_lpdf //Faction Class name 
+        {
+            name = "[7R] Livonian People's Defense Forces"; //Faction Name 
+            #include "groups.hpp"
+        };
+    };	
 };
+

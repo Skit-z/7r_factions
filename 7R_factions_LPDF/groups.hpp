@@ -1,1082 +1,1332 @@
-class EAST
+class Infantry
 {
-	name = "OPFOR"; // Name of Faction Side 
-	side = 0; // 0 = Opfor , 1 = Blufor , 2 = Indep , I think 
-	class 7R_lpdf //Faction Class name 
+	name = "Infantry"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+	class 7r_lpdf_RifleSquad
 	{
-		name = "[7R] Livonian People's Defense Forces"; //Faction Name 
-		class Infantry
+		name = "Squad (Rifle)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
 		{
-			name = "Infantry"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
-			class 7R_lpdf_RifleSquad
-			{
-				name = "Squad (Rifle)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-					rank = "SERGEANT"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_light";
-					rank = "CORPORAL";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7R_lpdf_medic";
-					rank = "PRIVATE";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_01";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-				class Unit4
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_lat";
-					rank = "PRIVATE";
-					position[] = {9,-2,0};
-				};
-				class Unit5
-				{
-					side = 0;
-					vehicle = "7R_lpdf_marksman";
-					rank = "PRIVATE";
-					position[] = {11,-2,0};
-				};
-				class Unit6
-				{
-					side = 0;
-					vehicle = "7R_lpdf_mg_assist";
-					rank = "PRIVATE";
-					position[] = {13,-2,0};
-				};
-				class Unit7
-				{
-					side = 0;
-					vehicle = "7r_lpdf_machinegunner";
-					rank = "PRIVATE";
-					position[] = {15,-2,0};
-				};
-			};
-			class 7R_lpdf_WeaponSquad
-			{
-				name = "Squad (Weapons)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-					rank = "SERGEANT"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_grenadier";
-					rank = "CORPORAL";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7R_lpdf_medic";
-					rank = "PRIVATE";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-				class Unit4
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank_assist";
-					rank = "PRIVATE";
-					position[] = {9,-2,0};
-				};
-				class Unit5
-				{
-					side = 0;
-					vehicle = "7r_lpdf_machinegunner";
-					rank = "PRIVATE";
-					position[] = {11,-2,0};
-				};
-				class Unit6
-				{
-					side = 0;
-					vehicle = "7R_lpdf_mg_assist";
-					rank = "PRIVATE";
-					position[] = {13,-2,0};
-				};
-				class Unit7
-				{
-					side = 0;
-					vehicle = "7r_lpdf_machinegunner";
-					rank = "PRIVATE";
-					position[] = {15,-2,0};
-				};
-			};
-			class 7R_lpdf_ATSquad
-			{
-				name = "Squad (AT)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-					rank = "SERGEANT"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_03";
-					rank = "CORPORAL";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7R_lpdf_medic";
-					rank = "PRIVATE";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-				class Unit4
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank_assist";
-					rank = "PRIVATE";
-					position[] = {9,-2,0};
-				};
-				class Unit5
-				{
-					side = 0;
-					vehicle = "7R_lpdf_marksman";
-					rank = "PRIVATE";
-					position[] = {11,-2,0};
-				};
-				class Unit6
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank";
-					rank = "PRIVATE";
-					position[] = {13,-2,0};
-				};
-				class Unit7
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank_assist";
-					rank = "PRIVATE";
-					position[] = {15,-2,0};
-				};
-			};
-			class 7R_lpdf_RifleTeam
-			{
-				name = "Team (Rifle)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_02"; //Class name of desired solider
-					rank = "CORPORAL"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_03";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_02";
-					rank = "PRIVATE";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_lat";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-			};
-			class 7R_lpdf_MGTeam
-			{
-				name = "Team (MG)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_02"; //Class name of desired solider
-					rank = "CORPORAL"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_mg_assist";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7r_lpdf_machinegunner";
-					rank = "PRIVATE";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7r_lpdf_machinegunner";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-			};
-			class 7R_lpdf_ATTeam
-			{
-				name = "Team (AT)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_01"; //Class name of desired solider
-					rank = "CORPORAL"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_lat";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank_assist";
-					rank = "PRIVATE";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-			};
-			class 7R_lpdf_EngineerTeam
-			{
-				name = "Team (Engineer)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_02"; //Class name of desired solider
-					rank = "CORPORAL"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_engineer";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7R_lpdf_demolitions";
-					rank = "PRIVATE";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_lat";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-			};
-			class 7R_lpdf_HQTeam
-			{
-				name = "Team (HQ)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_officer"; //Class name of desired solider
-					rank = "LIEUTENANT"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_squad_leader";
-					rank = "SERGEANT";
-					position[] = {3,-2,0};
-				};
-				class Unit2
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rto";
-					rank = "CORPORAL";
-					position[] = {5,-2,0};
-				};
-				class Unit3
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_light";
-					rank = "PRIVATE";
-					position[] = {7,-2,0};
-				};
-			};
-			class 7R_lpdf_RiflePair_01
-			{
-				name = "Pair (Rifle-1)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_01"; //Class name of desired solider
-					rank = "PRIVATE"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_02";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-			};
-			class 7R_lpdf_RiflePair_02
-			{
-				name = "Pair (Rifle-2)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_01"; //Class name of desired solider
-					rank = "PRIVATE"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_03";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-			};
-			class 7R_lpdf_RiflePair_03
-			{
-				name = "Pair (Light)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_light"; //Class name of desired solider
-					rank = "PRIVATE"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rifleman_light";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-			};
-			class 7R_lpdf_MGPair
-			{
-				name = "Pair (MG)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_mg_assist"; //Class name of desired solider
-					rank = "PRIVATE"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7r_lpdf_machinegunner";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-			};
-			class 7R_lpdf_ATPair
-			{
-				name = "Pair (AT)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank_assist"; //Class name of desired solider
-					rank = "PRIVATE"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_anti_tank";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-			};
-			class 7R_lpdf_EngineerPair
-			{
-				name = "Pair (Engineer)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_engineer"; //Class name of desired solider
-					rank = "PRIVATE"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_demolitions";
-					rank = "PRIVATE";
-					position[] = {3,-2,0};
-				};
-			};
-			class 7R_lpdf_HQPair
-			{
-				name = "Pair (Command)"; //Name of Group
-				icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-				faction = "7R_lpdf"; //Faction 
-				side = 0; //Side 
-				class Unit0
-				{
-					side = 0;
-					vehicle = "7R_lpdf_Field_Officer"; //Class name of desired solider
-					rank = "LIEUTENANT"; // Rank
-					position[] = {0,0,0}; //Position in the formation 
-				};
-				class Unit1
-				{
-					side = 0;
-					vehicle = "7R_lpdf_rto";
-					rank = "CORPORAL";
-					position[] = {3,-2,0};
-				};
-			};
+			side = 0;
+			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
 		};
-		// class SupportInf
-		// {
-		// 	name = "Support Infantry";
-		// 	class 7R_lpdf_WeaponsPair_AT3
-		// 	{
-		// 		name = "Weapons Pair (AT-3)"; //Name of Group
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Weapons_Carrier_Base"; //Class name of desired solider
-		// 			rank = "PRIVATE"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Weapons_Carrier_AT3";
-		// 			rank = "PRIVATE";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_WeaponsPair_DShKM
-		// 	{
-		// 		name = "Weapons Pair (DShKM)"; //Name of Group
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Weapons_Carrier_Base"; //Class name of desired solider
-		// 			rank = "PRIVATE"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Weapons_Carrier_DShKM";
-		// 			rank = "PRIVATE";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_WeaponsPair_M20
-		// 	{
-		// 		name = "Weapons Pair (Type 56 75mm Recoilless Rifle)"; //Name of Group
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Weapons_Carrier_Base"; //Class name of desired solider
-		// 			rank = "PRIVATE"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Weapons_Carrier_M20";
-		// 			rank = "PRIVATE";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_Sniper_Team
-		// 	{
-		// 		name = "Sniper Team"; //Name of Group
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Sniper"; //Class name of desired solider
-		// 			rank = "LIEUTENANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_Spotter";
-		// 			rank = "SERGEANT";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 	};
-		// };
-		// class Mechanized 
-		// {
-		// 	name = "Mechanized";
-		// 	class 7R_lpdf_BTR80_Inf_Squad
-		// 	{
-		// 		name = "Mechanized Infantry Squad (BTR-80)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_light";
-		// 			rank = "CORPORAL";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 		class Unit2
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_medic";
-		// 			rank = "PRIVATE";
-		// 			position[] = {5,-2,0};
-		// 		};
-		// 		class Unit3
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_01";
-		// 			rank = "PRIVATE";
-		// 			position[] = {7,-2,0};
-		// 		};
-		// 		class Unit4
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_lat";
-		// 			rank = "PRIVATE";
-		// 			position[] = {9,-2,0};
-		// 		};
-		// 		class Unit5
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_marksman";
-		// 			rank = "PRIVATE";
-		// 			position[] = {11,-2,0};
-		// 		};
-		// 		class Unit6
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_mg_assist";
-		// 			rank = "PRIVATE";
-		// 			position[] = {13,-2,0};
-		// 		};
-		// 		class Unit7
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7r_lpdf_machinegunner";
-		// 			rank = "PRIVATE";
-		// 			position[] = {15,-2,0};
-		// 		};
-		// 		class Unit8
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BTR_80";
-		// 			rank = "PRIVATE";
-		// 			position[] = {-5,-8,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_BTR70_Inf_Squad
-		// 	{
-		// 		name = "Mechanized Infantry Squad (BTR-70)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_light";
-		// 			rank = "CORPORAL";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 		class Unit2
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_medic";
-		// 			rank = "PRIVATE";
-		// 			position[] = {5,-2,0};
-		// 		};
-		// 		class Unit3
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_02";
-		// 			rank = "PRIVATE";
-		// 			position[] = {7,-2,0};
-		// 		};
-		// 		class Unit4
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_lat";
-		// 			rank = "PRIVATE";
-		// 			position[] = {9,-2,0};
-		// 		};
-		// 		class Unit5
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_marksman";
-		// 			rank = "PRIVATE";
-		// 			position[] = {11,-2,0};
-		// 		};
-		// 		class Unit6
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_mg_assist";
-		// 			rank = "PRIVATE";
-		// 			position[] = {13,-2,0};
-		// 		};
-		// 		class Unit7
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7r_lpdf_machinegunner";
-		// 			rank = "PRIVATE";
-		// 			position[] = {15,-2,0};
-		// 		};
-		// 		class Unit8
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BTR_70";
-		// 			rank = "PRIVATE";
-		// 			position[] = {-5,-8,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_BTR40_Inf_Squad
-		// 	{
-		// 		name = "Mechanized Infantry Squad (2x BTR-40)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_light";
-		// 			rank = "CORPORAL";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 		class Unit2
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_medic";
-		// 			rank = "PRIVATE";
-		// 			position[] = {5,-2,0};
-		// 		};
-		// 		class Unit3
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_02";
-		// 			rank = "PRIVATE";
-		// 			position[] = {7,-2,0};
-		// 		};
-		// 		class Unit4
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_lat";
-		// 			rank = "PRIVATE";
-		// 			position[] = {9,-2,0};
-		// 		};
-		// 		class Unit5
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_marksman";
-		// 			rank = "PRIVATE";
-		// 			position[] = {11,-2,0};
-		// 		};
-		// 		class Unit6
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_mg_assist";
-		// 			rank = "PRIVATE";
-		// 			position[] = {13,-2,0};
-		// 		};
-		// 		class Unit7
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7r_lpdf_machinegunner";
-		// 			rank = "PRIVATE";
-		// 			position[] = {15,-2,0};
-		// 		};
-		// 		class Unit8
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BTR_40_DHSKM_01";
-		// 			rank = "PRIVATE";
-		// 			position[] = {-5,-8,0};
-		// 		};
-		// 		class Unit9
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BTR_40_DHSKM_01";
-		// 			rank = "PRIVATE";
-		// 			position[] = {5,-8,0};
-		// 		};
-		// 	};			
-		// 	class 7R_lpdf_BMD1_Inf_Squad
-		// 	{
-		// 		name = "Mechanized Infantry Squad (BMD-1)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_light";
-		// 			rank = "CORPORAL";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 		class Unit2
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_medic";
-		// 			rank = "PRIVATE";
-		// 			position[] = {5,-2,0};
-		// 		};
-		// 		class Unit3
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_02";
-		// 			rank = "PRIVATE";
-		// 			position[] = {7,-2,0};
-		// 		};
-		// 		class Unit4
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_lat";
-		// 			rank = "PRIVATE";
-		// 			position[] = {9,-2,0};
-		// 		};
-		// 		class Unit5
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_marksman";
-		// 			rank = "PRIVATE";
-		// 			position[] = {11,-2,0};
-		// 		};
-		// 		class Unit6
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_mg_assist";
-		// 			rank = "PRIVATE";
-		// 			position[] = {13,-2,0};
-		// 		};
-		// 		class Unit7
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7r_lpdf_machinegunner";
-		// 			rank = "PRIVATE";
-		// 			position[] = {15,-2,0};
-		// 		};
-		// 		class Unit8
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BMD_1";
-		// 			rank = "PRIVATE";
-		// 			position[] = {-5,-8,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_BMP1_Inf_Squad
-		// 	{
-		// 		name = "Mechanized Infantry Squad (BMP-1)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_light";
-		// 			rank = "CORPORAL";
-		// 			position[] = {3,-2,0};
-		// 		};
-		// 		class Unit2
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_medic";
-		// 			rank = "PRIVATE";
-		// 			position[] = {5,-2,0};
-		// 		};
-		// 		class Unit3
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_01";
-		// 			rank = "PRIVATE";
-		// 			position[] = {7,-2,0};
-		// 		};
-		// 		class Unit4
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_rifleman_lat";
-		// 			rank = "PRIVATE";
-		// 			position[] = {9,-2,0};
-		// 		};
-		// 		class Unit5
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_marksman";
-		// 			rank = "PRIVATE";
-		// 			position[] = {11,-2,0};
-		// 		};
-		// 		class Unit6
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_mg_assist";
-		// 			rank = "PRIVATE";
-		// 			position[] = {13,-2,0};
-		// 		};
-		// 		class Unit7
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7r_lpdf_machinegunner";
-		// 			rank = "PRIVATE";
-		// 			position[] = {15,-2,0};
-		// 		};
-		// 		class Unit8
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BMP_1";
-		// 			rank = "PRIVATE";
-		// 			position[] = {-5,-8,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_BMD1_Squad
-		// 	{
-		// 		name = "Mechanized Squad (BMD-1)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BMD_1"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BMD_1";
-		// 			rank = "CORPORAL";
-		// 			position[] = {10,-10,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_BMP1_Squad
-		// 	{
-		// 		name = "Mechanized Squad (BMP-1)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BMP_1"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_BMP_1";
-		// 			rank = "CORPORAL";
-		// 			position[] = {10,-10,0};
-		// 		};
-		// 	};
-		// };
-		// class Armored
-		// {
-		// 	name = "Armored";
-		// 	class 7R_lpdf_PT76_Squad
-		// 	{
-		// 		name = "Tank Squad (PT-76)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_PT_76"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_PT_76";
-		// 			rank = "CORPORAL";
-		// 			position[] = {10,-10,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_T34_Squad
-		// 	{
-		// 		name = "Tank Squad (T-34)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_T34_85M"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_T34_85M";
-		// 			rank = "CORPORAL";
-		// 			position[] = {10,-10,0};
-		// 		};
-		// 	};
-		// 	class 7R_lpdf_T55_Squad
-		// 	{
-		// 		name = "Tank Squad (T-55)";
-		// 		icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa"; 
-		// 		faction = "7R_lpdf"; //Faction 
-		// 		side = 0; //Side 
-		// 		class Unit0
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_T55"; //Class name of desired solider
-		// 			rank = "SERGEANT"; // Rank
-		// 			position[] = {0,0,0}; //Position in the formation 
-		// 		};
-		// 		class Unit1
-		// 		{
-		// 			side = 0;
-		// 			vehicle = "7R_lpdf_T55";
-		// 			rank = "CORPORAL";
-		// 			position[] = {10,-10,0};
-		// 		};
-		// 	};
-		// };
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_light";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7R_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7R_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7R_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
 	};
-};	
+	class 7r_lpdf_WeaponSquad
+	{
+		name = "Squad (Weapons)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_grenadier";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7R_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank_assist";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7R_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+	};
+	class 7r_lpdf_ATSquad
+	{
+		name = "Squad (AT)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_03";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7R_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank_assist";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7R_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank_assist";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+	};
+	class 7r_lpdf_RifleTeam
+	{
+		name = "Team (Rifle)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_02"; //Class name of desired solider
+			rank = "CORPORAL"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_03";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_02";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+	};
+	class 7r_lpdf_MGTeam
+	{
+		name = "Team (MG)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_02"; //Class name of desired solider
+			rank = "CORPORAL"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+	};
+	class 7r_lpdf_ATTeam
+	{
+		name = "Team (AT)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_01"; //Class name of desired solider
+			rank = "CORPORAL"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank_assist";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+	};
+	class 7r_lpdf_EngineerTeam
+	{
+		name = "Team (Engineer)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_02"; //Class name of desired solider
+			rank = "CORPORAL"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_engineer";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7R_lpdf_demolitions";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+	};
+	class 7r_lpdf_HQTeam
+	{
+		name = "Team (HQ)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_officer"; //Class name of desired solider
+			rank = "LIEUTENANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_squad_leader";
+			rank = "SERGEANT";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rto";
+			rank = "CORPORAL";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_light";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+	};
+	class 7r_lpdf_RiflePair_01
+	{
+		name = "Pair (Rifle-1)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_01"; //Class name of desired solider
+			rank = "PRIVATE"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_02";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+	};
+	class 7r_lpdf_RiflePair_02
+	{
+		name = "Pair (Rifle-2)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_01"; //Class name of desired solider
+			rank = "PRIVATE"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_03";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+	};
+	class 7r_lpdf_RiflePair_03
+	{
+		name = "Pair (Light)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_light"; //Class name of desired solider
+			rank = "PRIVATE"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rifleman_light";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+	};
+	class 7r_lpdf_MGPair
+	{
+		name = "Pair (MG)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_mg_assist"; //Class name of desired solider
+			rank = "PRIVATE"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+	};
+	class 7r_lpdf_ATPair
+	{
+		name = "Pair (AT)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank_assist"; //Class name of desired solider
+			rank = "PRIVATE"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_anti_tank";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+	};
+	class 7r_lpdf_EngineerPair
+	{
+		name = "Pair (Engineer)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_engineer"; //Class name of desired solider
+			rank = "PRIVATE"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_demolitions";
+			rank = "PRIVATE";
+			position[] = {3,-2,0};
+		};
+	};
+	class 7r_lpdf_HQPair
+	{
+		name = "Pair (Command)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa"; 
+		faction = "7R_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7R_lpdf_Field_Officer"; //Class name of desired solider
+			rank = "LIEUTENANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7R_lpdf_rto";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+	};
+};
+
+class Motorized
+{
+	name = "Motorized"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+	class 7r_lpdf_uaz_squad_hmg
+	{
+		name = "UAZ Squad (DShKM)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_uaz_dshkm";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_uaz_dshkm";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+	class 7r_lpdf_uaz_squad_gmg
+	{
+		name = "UAZ Squad (AGS-30)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_uaz_ags30";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_uaz_ags30";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+	class 7r_lpdf_uaz_squad_mixed
+	{
+		name = "UAZ Squad (DShKM/AGS-30)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_uaz_dshkm";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_uaz_ags30";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+	class 7r_lpdf_gaz_squad
+	{
+		name = "GAZ-66 Squad"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_gaz66";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+	};
+};
+
+class Mechanized
+{
+	name = "Mechanized"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+	class 7r_lpdf_btr60_squad
+	{
+		name = "BTR-60PB Squad"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_btr60";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_btr60";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+	class 7r_lpdf_btr80_squad
+	{
+		name = "BTR-80 Squad"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_btr80";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_btr80";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+	class 7r_lpdf_brdm2_squad
+	{
+		name = "BRDM-2 Squad"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_brdm2";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_brdm2_hq";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+	class 7r_lpdf_bmp1_squad
+	{
+		name = "BMP-1 Squad"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_bmp1";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_bmp1";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+	class 7r_lpdf_bmp2_squad
+	{
+		name = "BMP-2 Squad"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_squad_leader"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_autorifleman";
+			rank = "CORPORAL";
+			position[] = {3,-2,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_medic";
+			rank = "PRIVATE";
+			position[] = {5,-2,0};
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_01";
+			rank = "PRIVATE";
+			position[] = {7,-2,0};
+		};
+		class Unit4
+		{
+			side = 0;
+			vehicle = "7r_lpdf_rifleman_lat";
+			rank = "PRIVATE";
+			position[] = {9,-2,0};
+		};
+		class Unit5
+		{
+			side = 0;
+			vehicle = "7r_lpdf_marksman";
+			rank = "PRIVATE";
+			position[] = {11,-2,0};
+		};
+		class Unit6
+		{
+			side = 0;
+			vehicle = "7r_lpdf_mg_assist";
+			rank = "PRIVATE";
+			position[] = {13,-2,0};
+		};
+		class Unit7
+		{
+			side = 0;
+			vehicle = "7r_lpdf_machinegunner";
+			rank = "PRIVATE";
+			position[] = {15,-2,0};
+		};
+		class Unit8
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_bmp2";
+			rank = "PRIVATE";
+			position[] = {0,-10,0};
+		};
+		class Unit9
+		{
+			
+			side = 0;
+			vehicle = "7r_lpdf_bmp2";
+			rank = "PRIVATE";
+			position[] = {10,-10,0};
+		};
+	};
+};
+
+class Armor
+{
+	name = "Armor"; //Name of Sub Group - Infantry , SpecOps , Support , Motorized , Mechanized, Armored
+	class 7r_lpdf_t72_squad
+	{
+		name = "Tank Section (T-72)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t72ba"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t72bb";
+			rank = "CORPORAL";
+			position[] = {15,-15,0};
+		};
+	};
+	class 7r_lpdf_t80_squad
+	{
+		name = "Tank Section (T-80)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t80b"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t80b";
+			rank = "CORPORAL";
+			position[] = {15,-15,0};
+		};
+	};
+	class 7r_lpdf_mixed_tank_squad
+	{
+		name = "Tank Section (T-72/T-80)"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t72bb"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t80b";
+			rank = "CORPORAL";
+			position[] = {15,-15,0};
+		};
+	};
+	class 7r_lpdf_tank_platoon
+	{
+		name = "Tank Platoon"; //Name of Group
+		icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa"; 
+		faction = "7r_lpdf"; //Faction 
+		side = 0; //Side 
+		class Unit0
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t72bb"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {0,0,0}; //Position in the formation 
+		};
+		class Unit1
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t80b";
+			rank = "CORPORAL";
+			position[] = {15,-15,0};
+		};
+		class Unit2
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t72ba"; //Class name of desired solider
+			rank = "SERGEANT"; // Rank
+			position[] = {-15,-15,0}; //Position in the formation 
+		};
+		class Unit3
+		{
+			side = 0;
+			vehicle = "7r_lpdf_t80b";
+			rank = "CORPORAL";
+			position[] = {30,-30,0};
+		};
+	};
+	
+};
